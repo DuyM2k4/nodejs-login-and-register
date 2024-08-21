@@ -16,7 +16,4 @@ router.get('/profile', userController.showProfile);
 // Route cho đăng xuất
 router.get('/logout', userController.logoutUser);
 
-// Route cho trang thành công
-router.get('/success', userController.showSuccessPage);
-
 module.exports = router;

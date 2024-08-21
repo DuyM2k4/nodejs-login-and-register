@@ -27,8 +27,8 @@ exports.registerUser = async (req, res) => {
     const user = new User({ username, email, password });
     await user.save();
     console.log('User registered successfully');
-    // Chuyển hướng đến trang thành công sau khi đăng ký
-    res.redirect('/success');
+    // Thông báo thành công sau khi đăng ký
+    res.status(400).send('Registration Successful!. <<a href="/login">Login</a>>');
   } catch (err) {
     console.error('Error registering user:', err);
     // Nếu có lỗi xảy ra trong quá trình đăng ký, gửi thông báo lỗi cho người dùng
@@ -99,7 +99,4 @@ exports.logoutUser = (req, res) => {
   });
 };
 
-// Hiển thị trang thành công sau khi đăng ký
-exports.showSuccessPage = (req, res) => {
-  res.render('success');
-};
+
