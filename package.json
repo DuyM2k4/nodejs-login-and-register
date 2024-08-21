@@ -1,0 +1,33 @@
+{
+  "name": "login-register",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon --inspect app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/DuyM2k4/nodejs-login-and-register.git"
+  },
+  "keywords": [
+    "login",
+    "register"
+  ],
+  "author": "DuyM",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DuyM2k4/nodejs-login-and-register/issues"
+  },
+  "homepage": "https://github.com/DuyM2k4/nodejs-login-and-register#readme",
+  "description": "",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "mongoose": "^8.5.3",
+    "nodemon": "^3.1.4"
+  }
+}
